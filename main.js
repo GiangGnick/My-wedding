@@ -272,7 +272,7 @@ void main(){
 	pos.y /= widthHeightRatio;
 	//Shift upwards to centre heart
 	pos.y += 0.02;
-	float scale = 0.000015 * height;
+	float scale = 0.00002 * height;
 	
 	float t = time;
     
@@ -403,7 +403,7 @@ function draw(){
 	
   //Update time
 	thisFrame = Date.now();
-  time += (thisFrame - lastFrame)/1000;	
+  time += (thisFrame - lastFrame)/1500;	
 	lastFrame = thisFrame;
 
 	//Send uniforms to program
